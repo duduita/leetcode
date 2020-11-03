@@ -2,6 +2,13 @@
     "files.associations": {
         "iostream": "cpp",
         "xtree": "cpp",
-        "xstddef": "cpp"
+        "xstddef": "cpp",
+        "set": "cpp",
+        "vector": "cpp",
+        "limits": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
