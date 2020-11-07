@@ -9,6 +9,8 @@
         "initializer_list": "cpp",
         "type_traits": "cpp",
         "xstring": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "utility": "cpp",
+        "unordered_map": "cpp"
     }
 }
