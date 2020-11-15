@@ -12,6 +12,9 @@
         "xutility": "cpp",
         "utility": "cpp",
         "unordered_map": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "iosfwd": "cpp",
+        "xhash": "cpp",
+        "map": "cpp"
     }
 }
