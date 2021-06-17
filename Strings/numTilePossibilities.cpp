@@ -25,7 +25,7 @@ int numTilePossibilities(string tiles) {
 }
 
 int main() {
-  string tiles = {"AAABBC"};
+  string tiles = {"AAB"};
   cout << numTilePossibilities(tiles);
 
   return 0;
