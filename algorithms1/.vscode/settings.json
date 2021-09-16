@@ -5,5 +5,7 @@
         "limits": "cpp",
         "valarray": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "c-cpp-compile-run.c-compiler": "/usr/bin/gcc",
+    "c-cpp-compile-run.cpp-compiler": "/usr/bin/g++"
 }

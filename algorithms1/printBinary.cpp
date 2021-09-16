@@ -24,4 +24,5 @@ int main(void)
     bin(7);
     cout << endl;
     bin(4);
+    cout << "\n\n\n";
 }
