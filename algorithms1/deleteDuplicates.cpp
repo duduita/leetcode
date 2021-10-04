@@ -11,17 +11,19 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-ListNode *reverseList(ListNode *head)
+ListNode *deleteDuplicates(ListNode *head)
 {
-    ListNode *new_head = new ListNode(0, head);
-    new_head->next = head;
-    ListNode *aux = head;
-    if (!head)
+    ListNode *res = head;
+    if (!head or head->next == nullptr)
         return head;
-    while (head != nullptr)
+    while (head->next != nullptr)
     {
-        aux = new ListNode(head->val, aux);
-        head = head->next;
+        if (head->val == head->next->val)
+        {
+            head->next = head->next->next;
+        }
+        else
+            head = head->next;
     }
-    return new_head->next;
+    return res;
 }
