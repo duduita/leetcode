@@ -1,7 +1,14 @@
 **Facebook main questions review**
+**Don't forget!!**
+- #include <bits/stdc++.h>
+- using namespace std;
 
-**Dynamic Programming**
-**Longest Palindromic Substring**
+**Palindromic/Substring Main Questions**
+**Valid Palindrome II**
+- While s[r] == s[l] => l++; r--;
+- return checkPalindrome(s, count + 1, r, l + 1) || checkPalindrome(s, count + 1, r - 1, l);
+  
+**Longest Palindromic Substring (bottom-up approach)** 
 - solve palindromes size 1
 - solve palindromes size 2
 - L[i + 1][j - 1] && s[i] == s[j] => L[i][j] = true
@@ -11,16 +18,16 @@
 - there are 2n - 1 centers (i.e., abba case)
 - start = i - (len - 1) / 2; end = i + len / 2; return r - l - 1
 
-**Longest Common Prefix**
-- just need to compare with the first word
-- be careful with "" edge case
-- 
-**Longest Palindromic Subsequence**
+**Longest Palindromic Subsequence (bottom-up approach)**
 - fill main diagonal with 1 
 - L[i][j] = max(L[i + 1][j], L[i][j - 1])
 - s[i] == s[j] => L[i][j] = L[i + 1][j - 1] + 2
 - s[i] == s[j] && k == 2 => L[i][j] = 2;
   
+**Longest Common Prefix**
+- just need to compare with the first word
+- be careful with "" edge case
+
 **Length of Longest Substring**
 - vector<int> dict(256, -1);
 - check if the last character position is greater than start
@@ -37,10 +44,6 @@
 - First create the alienMap
 - For each pair call checkWords
 - Check the precedence of each letter
-
-**Valid Palindrome II**
-- While s[r] == s[l] => l++; r--;
-- return checkPalindrome(s, count + 1, r, l + 1) || checkPalindrome(s, count + 1, r - 1, l);
 
 **K Closest Points to Origin**
 - priority_queue<pair<float, int>> pq;
@@ -61,3 +64,30 @@
 - if a == '1' => carry++;
 - if a == '0' => carry++;
 - if carry % 2 == 1 => push_back('1')
+
+**Leftmost Column with at Least a One**
+- Approach 2: Binary Search Each Row
+- Approach 3: Start at Top Right, Move Only Left and Down
+
+**Binary Tree Right Side View**
+- BFS: Two Queues: Let's use two queues: one for the current level, and one for the next. The idea is to pop the nodes one by one from the current level and push their children into the next level queue. Each time the current queue is empty, we have the right side element in hands.
+- Recursive DFS: To traverse the tree level by level, starting each time from the rightmost child.
+
+**Find All Anagrams in a String**
+- Sliding window
+- Create a s1map and s2map
+- Then check if the windows matching, else translade s2map
+
+**Dot Product of Two Sparse Vectors**
+- private map<int, int>
+- sparceVector is a construction function, which fill up the private map
+- Just iterate on the maps, in case of same index pos, multiply them
+
+**Letter Combinations of a Phone Number**
+- private map<int, string>
+- for each index, find the possible_letters
+- backtrack
+
+**Binary Tree Level Order Traversal**
+- res.size() == level => push_back({})
+- recursion using level + 1
