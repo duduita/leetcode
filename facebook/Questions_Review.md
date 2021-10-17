@@ -70,8 +70,8 @@
 - Approach 3: Start at Top Right, Move Only Left and Down
 
 **Binary Tree Right Side View**
-- BFS: Two Queues: Let's use two queues: one for the current level, and one for the next. The idea is to pop the nodes one by one from the current level and push their children into the next level queue. Each time the current queue is empty, we have the right side element in hands.
-- Recursive DFS: To traverse the tree level by level, starting each time from the rightmost child.
+- BFS is better in space
+- when i == levelLength(queue.size) - 1, then push_back its value
 
 **Find All Anagrams in a String**
 - Sliding window
@@ -91,3 +91,35 @@
 **Binary Tree Level Order Traversal**
 - res.size() == level => push_back({})
 - recursion using level + 1
+
+**Best Time to Buy and Sell Stock**
+- As you can return 0, if a sum is <0, you can discard it
+
+**Subarray Sum Equals K (contiguous)**
+- map<int, int> m, m[0]++
+- sum += nums[i];
+  - if(m.find(sum - k) != m.end())
+    - count += m[sum - k];
+  - m[sum]++;
+
+**First Bad Version**
+- mid = l + (r-l)/2 => to avoid overflow
+
+**move Zeroes**
+- nums[i] != 0 => swap(nums[l++], nums[i])
+
+**Convert Binary Search Tree to Sorted Doubly Linked List**
+- first and last pointers
+- DFS to satisfy the in place condition
+
+**Trie**
+- first create a Trie class, which has a linked list, where each node is composed by a array 26, starting as 0
+- Add: if there already have a specific node in a specific level, use it, else, create other
+- Search: if there isn't a '.', just iterate in your linked list, else test all possible options
+
+**Accounts Merge**
+- findParent function
+- create our owner/parents map
+- update our parents map
+- union our subsets
+- push our answer
