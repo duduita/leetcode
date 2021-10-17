@@ -48,9 +48,6 @@
 **K Closest Points to Origin**
 - priority_queue<pair<float, int>> pq;
 
-**Subarray Sum Equals K** 
-- Need Review!
-
 **Product of Array Except Self**
 - Create the L array with left produtcs (bottom-up)
 - Create the R array
@@ -123,3 +120,25 @@
 - update our parents map
 - union our subsets
 - push our answer
+
+**Sums**
+**Two Sum O(n) space and time**
+- create a map<value, position>
+- if there's target - value, push_back to res target-value and i
+- if not, m[nums[i]] = position
+
+**Two Sum Ordered O(n) time and O(1) space**
+- two pointers technique
+- if get, return, else r-- or l++
+
+**Subarray Sum Equals K**
+- map<cummulative_sum_i, number_of_ocurrences_sum_i>
+- m[0]++
+- if m[cum - k] exists, so counter ++ m[cumm - k]
+- m[cum]++
+- cum[i] - cum[j] = k => it means that we have here a subarray which sum is equal to K
+
+**Judge Square Sum**
+- max = sqrt(c)
+- set.insert i*i
+- if(c - i*i) return true

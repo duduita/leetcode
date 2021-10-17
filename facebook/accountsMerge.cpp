@@ -1,67 +1,42 @@
 class Solution
 {
-public:
-    vector<vector<string>> accountsMerge(vector<vector<string>> &accounts)
+private:
+    string find(string s, map<string, string> &p)
     {
-        multimap<string, set<string>> m;
-        multimap<string, set<string>>::iterator itr;
+        return p[s] == s ? s : find(p[s], p); // if are the parent, return s, else, find the parent
+    }
 
-        for (int i = 0; i < accounts.size(); i++)
-        {                                 // iterate over the accounts
-            itr = m.find(accounts[i][0]); // get the account name
-            if (itr != m.end())
-            { // if there is an acc name
-                int flag = false;
-                for (int j = 0; !flag && j < accounts[i].size(); j++)
-                {
-                    if (itr->second.find(accounts[i][j]) != itr->second.end())
-                    { // check if there is at least a same email
-                        flag = true;
-                        for (int k = 1; k < accounts[i].size(); k++)
-                        { // so, insert all emails
-                            itr->second.insert(accounts[i][k]);
-                        }
-                    }
-                }
-                if (!flag)
-                { // if there's no acc name
-                    set<string> temp;
-                    for (int l = 1; l < accounts[i].size(); l++)
-                        temp.insert(accounts[i][l]);  // insert all values to a temp
-                    m.insert({accounts[i][0], temp}); // and insert the new pair to the multimap
-                }
+public:
+    vector<vector<string>> accountsMerge(vector<vector<string>> &acts)
+    {
+        map<string, string> owner;
+        map<string, string> parents;
+        map<string, set<string>> unions;
+        for (int i = 0; i < acts.size(); i++)
+        {
+            for (int j = 1; j < acts[i].size(); j++)
+            {
+                parents[acts[i][j]] = acts[i][j]; // first, each email is its representative
+                owner[acts[i][j]] = acts[i][0];   // the owner is the name
             }
         }
-        vector<vector<string>> res;
-        vector<string> aux;
-        for (auto i : m)
+        for (int i = 0; i < acts.size(); i++)
         {
-            aux.push_back(i.first); // pick the name
-            for (auto j : i.second)
-            {
-                aux.push_back(j); // pick the emails
-            }
-            res.push_back(aux); // push the aux
-            aux.clear();        // clear the aux
+            string p = find(acts[i][1], parents); // find the parent of acts[0][1]
+            for (int j = 2; j < acts[i].size(); j++)
+                parents[find(acts[i][j], parents)] = p; // change the parent of the parent
+        }
+        for (int i = 0; i < acts.size(); i++)
+            for (int j = 1; j < acts[i].size(); j++)
+                unions[find(acts[i][j], parents)].insert(acts[i][j]); // union the elements according to its parents
+
+        vector<vector<string>> res;
+        for (pair<string, set<string>> p : unions)
+        {
+            vector<string> emails(p.second.begin(), p.second.end());
+            emails.insert(emails.begin(), owner[p.first]);
+            res.push_back(emails);
         }
         return res;
     }
 };
-
-/*
-
-jhon -> key
-jhonsmith@mail.com -> will be in my set
-john_newyork@mail.com -> will be in my set
-
-jhon -> there's is this key on my map?
-jhonsmith@mail.com -> there's?
-john00@mail.com -> there's?
-
-mary
-mary@mail.com
-
-john
-johnnybravo@mail.com
-
-*/
