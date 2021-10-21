@@ -139,6 +139,30 @@
 - cum[i] - cum[j] = k => it means that we have here a subarray which sum is equal to K
 
 **Judge Square Sum**
+- O(sqrt(c)log(sqrt(c))) in time and O(sqrt(c)) in space
 - max = sqrt(c)
 - set.insert i*i
 - if(c - i*i) return true
+
+**Check Subarray Sum**
+- unordered_set because you don't care about quant
+- mod = cum % k, and find mod (be careful with k = 0)
+- the required length is at least 2, so we just need to insert the mod one iteration later.
+
+**3 Sum**
+- need review!!
+
+**Clone Graph** 
+- Need review to fix!
+- O(M + N), O(N)
+- m[1] = O(1) -> m[2] and m[4]
+- where m[2] = O(2)
+
+**Buildings With an Ocean View**
+- from the right to the left :)
+  
+**Review**
+- Clone Graph
+- Move Zeroes
+- Binary Tree Vertical Order Tranversal
+- Random Pick with Weight
