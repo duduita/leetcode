@@ -161,6 +161,11 @@
 **Buildings With an Ocean View**
 - from the right to the left :)
   
+**Random Pick with Weight**
+- If the right element is greater, so he could be a peak
+- If the right element is lower, so you could be a peak
+- binary search (r = mid)
+  
 **Review**
 - Clone Graph
 - Move Zeroes
