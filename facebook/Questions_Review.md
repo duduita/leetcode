@@ -166,8 +166,25 @@
 - If the right element is lower, so you could be a peak
 - binary search (r = mid)
   
+**Random Pick Index**
+- return m[target][rand() % m[target].size()];
+- Reservoir sampling (1/n is the probability of a hat being chosen)
+
+**Next Permutation**
+- find que element that end a descending order subarray
+
+**Inorder Traversal**
+- iteratively == push all left nodes first
+  
+**Meeting Rooms**
+
 **Review**
 - Clone Graph
 - Move Zeroes
 - Binary Tree Vertical Order Tranversal
 - Random Pick with Weight
+- Random Pick Index
+- Next Permutation
+- Meeting Rooms (why static comp is too slow?)
+- Priority queue min without integers?
+
