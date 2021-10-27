@@ -175,16 +175,50 @@
 
 **Inorder Traversal**
 - iteratively == push all left nodes first
-  
+
 **Meeting Rooms**
 
+**Vertical Order Traversal of a Binary Tree**
+- map<int, map<int, multiset<int>>>
+- queue<pair<TreeNode*, pair<int, int>>>
+- m[x][y].insert(node->val)
+- each (x, y) should have a multiset
+  
+**Binary Tree Vertical Order Traversal**
+- map<int, vector<int>>
+- each x should have a vector
+  
 **Review**
 - Clone Graph
 - Move Zeroes
-- Binary Tree Vertical Order Tranversal
-- Random Pick with Weight
-- Random Pick Index
-- Next Permutation
 - Meeting Rooms (why static comp is too slow?)
 - Priority queue min without integers?
 
+tomorrow:
+intersection + review
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+https://leetcode.com/problems/sparse-matrix-multiplication/
+https://leetcode.com/problems/word-break/
+https://leetcode.com/problems/alien-dictionary/
+https://leetcode.com/problems/remove-invalid-parentheses/ OK
+https://leetcode.com/problems/roman-to-integer/
+https://leetcode.com/problems/integer-to-english-words/ <- solução
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+
+https://leetcode.com/problems/making-a-large-island/
+https://leetcode.com/problems/merge-k-sorted-lists/
+https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
+https://leetcode.com/problems/diameter-of-binary-tree/
+https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+https://leetcode.com/problems/binary-tree-maximum-path-sum/
+https://leetcode.com/problems/minimum-window-substring/solution/
+
+
+https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+
+https://leetcode.com/explore/interview/card/facebook/55/dynamic-programming-3/3035/
+https://leetcode.com/problems/strobogrammatic-number-ii/
+
+9:32 
+https://leetcode.com/problems/alien-dictionary/
