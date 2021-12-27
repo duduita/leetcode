@@ -1,6 +1,6 @@
 **Search in Rotated Sorted Array**
-- nums[mid] > nums[l] ?
-- target >= nums[l] && nums[mid] > target
+- check if target is in a non-rotated array
+  - in this case, check if the target is in that
 
 **Search Matrix**
 - binary search na coluna
@@ -31,6 +31,12 @@
 - res += r - l + 1
 - 5 2 6 => 5 2 6  2 6  6
 
+**Maximum Length of a Concatenated String with Unique Characters**
+- try to enhance the solution with set
+  
+**LRU Cache**
+- unordered_map + double linked list
+  
 **Review**
 - Search in Rotated Sorted Array
 - Search Matrix
@@ -42,3 +48,10 @@
 - Subarray Product Less Than K (trick idea)
 - findCircleNum (why only visited[j]??)
 - Subsets, why if(i > index && nums[i] == nums[i-1])? Complexity?
+
+
+- Find First and Last Position of Element in Sorted Array without STL?
+- Search a 2D Matrix
+  - both questions above deal with lower_bound without stl
+- complexity em backtracking?
+- LRU Cache require a new DS
