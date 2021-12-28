@@ -8,7 +8,7 @@
 - l < r && r = mid
 
 **Find Minimum in Rotated Sorted Array**
-- nums[mid] < nums[r]
+- if nums[mid] < nums[r], so the minimum is in the left part
 
 **3Sum**
 - pivot, and two sum
@@ -38,9 +38,6 @@
 - unordered_map + double linked list
   
 **Review**
-- Search in Rotated Sorted Array
-- Search Matrix
-- Find Minimum in Rotated Sorted Array
 - backspaceCompare
 - 3sum (faster solution)
 - number of islands (bfs)
@@ -54,4 +51,5 @@
 - Search a 2D Matrix
   - both questions above deal with lower_bound without stl
 - complexity em backtracking?
-- LRU Cache require a new DS
+- LRU Cache require a new DS (crazy!)
+- Find Minimum in Rotated Sorted Array solution is intuitive?
