@@ -37,6 +37,9 @@
 **LRU Cache**
 - unordered_map + double linked list
   
+**Find First and Last Position of Element in Sorted Array**
+- check if l was found
+  
 **Review**
 - backspaceCompare
 - 3sum (faster solution)
@@ -50,6 +53,8 @@
 - Find First and Last Position of Element in Sorted Array without STL?
 - Search a 2D Matrix
   - both questions above deal with lower_bound without stl
+  
 - complexity em backtracking?
 - LRU Cache require a new DS (crazy!)
 - Find Minimum in Rotated Sorted Array solution is intuitive?
+- Spiral Matrix (crazy solution!!)
