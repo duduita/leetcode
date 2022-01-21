@@ -8,7 +8,7 @@
 - l < r && r = mid
 
 **Find Minimum in Rotated Sorted Array**
-- if nums[mid] < nums[r], so the minimum is in the left part
+- we need to find the non-rotated part of the array, because we need to look for the inflection point.
 
 **3Sum**
 - pivot, and two sum
@@ -39,7 +39,14 @@
   
 **Find First and Last Position of Element in Sorted Array**
 - check if l was found
-  
+
+**Remove Duplicates from Sorted List II**
+- sentinel node -> to remove the entire list
+- predecessor node -> to remove a sublist
+- head node -> to scroll trought the list
+- when we need to do somethings besides 'while', we can use if and while inside
+- as we need to walk everytime with the head, put head->next after the loop
+
 **Review**
 - backspaceCompare
 - 3sum (faster solution)
@@ -53,8 +60,10 @@
 - Find First and Last Position of Element in Sorted Array without STL?
 - Search a 2D Matrix
   - both questions above deal with lower_bound without stl
+  - actually, all the 5 questions of cracking algo 2 need to be reviewed
   
 - complexity em backtracking?
 - LRU Cache require a new DS (crazy!)
 - Find Minimum in Rotated Sorted Array solution is intuitive?
-- Spiral Matrix (crazy solution!!)
+- Spiral Matrix (crazy solution!!) 
+- Find Peak Element (sometimes I forget the solution :/)
