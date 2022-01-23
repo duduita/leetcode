@@ -47,9 +47,19 @@
 - when we need to do somethings besides 'while', we can use if and while inside
 - as we need to walk everytime with the head, put head->next after the loop
 
+**Word Search**
+- backtrack
+- replace the letter by #, then undo it.
+
+**Excel Sheet Column Number**
+- A little wierd, but ok! (quick review)
+
+**String Compression**
+- to_string(count) convert 12 to "12", for example
+- be careful not to imply wrong things from the question description, for example: order
+
 **Review**
 - backspaceCompare
-- 3sum (faster solution)
 - number of islands (bfs)
 - Container With Most Water (prof greddy)
 - Subarray Product Less Than K (trick idea)
@@ -67,3 +77,5 @@
 - Find Minimum in Rotated Sorted Array solution is intuitive?
 - Spiral Matrix (crazy solution!!) 
 - Find Peak Element (sometimes I forget the solution :/)
+- 3sum (faster solution)
+- Word Search
