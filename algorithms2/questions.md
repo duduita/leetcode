@@ -16,6 +16,7 @@
 
 **Find All Anagrams in a String**
 - sliding window (comparing smap and pmap)
+- edge case (need review)
   
 **Rotate Array**
 - reverse(nums.begin(), nums.begin() + k);
@@ -25,6 +26,7 @@
 - l = max(A[i][0], B[j][0])
 - r = min(A[i][1], B[j][1])
 - only l or r increment
+- check if l < r
   
 **Subarray Product Less Than K**
 - sliding window
@@ -58,10 +60,31 @@
 - to_string(count) convert 12 to "12", for example
 - be careful not to imply wrong things from the question description, for example: order
 
+**Median of Two Sorted Arrays**
+- median line is what's matters
+- r = n ??
+
+**Copy List with Random Pointer**
+- treat as a graph
+- map<old_node, new_node>
+- could you improve?
+  
+**Number of Provinces**
+- It's not equal to number of islands
+- You need to traverse as a graph, row by row
+- each row is an element 
+
+**Sort Colors**
+- move zeroes but two times
+
+**Add Two Numbers**
+- review basic math: carry, sum, etc..
+  
+**Merge k Sorted Lists**
+- Merge two Sorted Lists + divide and conquer logic
+
 **Review**
-- backspaceCompare
 - number of islands (bfs)
-- Container With Most Water (prof greddy)
 - Subarray Product Less Than K (trick idea)
 - findCircleNum (why only visited[j]??)
 - Subsets, why if(i > index && nums[i] == nums[i-1])? Complexity?
@@ -79,3 +102,11 @@
 - Find Peak Element (sometimes I forget the solution :/)
 - 3sum (faster solution)
 - Word Search
+- backspaceCompare (trick edge cases)
+- Container With Most Water (insane greddy)
+- Median of Two Sorted Arrays (insane question)
+- Copy List with Random Pointer (review and improve?)
+- Number of Provinces (remember!! it's not equal to number of islands)
+- Add Two Numbers (basic math)
+- Intersection of Two Linked Lists (amazing solution!!)
+- Merge k Sorted Lists (insane optmization)
