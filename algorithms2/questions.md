@@ -83,13 +83,25 @@
 **Merge k Sorted Lists**
 - Merge two Sorted Lists + divide and conquer logic
 
+**Linked List Cycle**
+- Floyd's Cycle Finding Algorithm
+  
+**Lowest Common Ancestor of a Binary Tree**
+- review the idea
+
+**Populating Next Right Pointers in Each Node**
+- assume that if you are solving N + 1 Level, so N level it was already solved
+- 2 connections that you need to put
+
+**Rotate Image**
+- review transpose and reflect
+- which solution is better?
+  
 **Review**
 - number of islands (bfs)
 - Subarray Product Less Than K (trick idea)
 - findCircleNum (why only visited[j]??)
 - Subsets, why if(i > index && nums[i] == nums[i-1])? Complexity?
-
-
 - Find First and Last Position of Element in Sorted Array without STL?
 - Search a 2D Matrix
   - both questions above deal with lower_bound without stl
@@ -110,3 +122,8 @@
 - Add Two Numbers (basic math)
 - Intersection of Two Linked Lists (amazing solution!!)
 - Merge k Sorted Lists (insane optmization)
+- Floyd's Cycle Finding Algorithm (nice solution!)
+- Lowest Common Ancestor of a Binary Search Tree (very wierd idea!!)
+- Lowest Common Ancestor of a Binary Tree (good solution, quick review)
+- Rotate Image (which solution is better?)
+- Review Trie! (hardiest question of this list)
