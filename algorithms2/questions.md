@@ -96,7 +96,10 @@
 **Rotate Image**
 - review transpose and reflect
 - which solution is better?
-  
+
+**Binary Tree Zigzag Level Order Traversal**
+- odd levels from the end, and even levels from the beginning :)
+
 **Review**
 - number of islands (bfs)
 - Subarray Product Less Than K (trick idea)
@@ -129,3 +132,4 @@
 - Review Trie! (hardiest question of this list) REVIEWD!
 - Serialize and Deserialize Binary Tree (understand space in serialize and recursion in dereserialize)
 - Serialize and Deserialize BST which the difference between BT and BST, in this case?
+- Populating Next Right Pointers in Each Node II (insane recursion)
