@@ -115,7 +115,7 @@
 - 3sum (faster solution)
 - Word Search
 - backspaceCompare (trick edge cases)
-- Container With Most Water (insane greddy)
+- Container With Most Water (insane greddy) 
 - Median of Two Sorted Arrays (insane question)
 - Copy List with Random Pointer (review and improve?)
 - Number of Provinces (remember!! it's not equal to number of islands)
@@ -126,4 +126,6 @@
 - Lowest Common Ancestor of a Binary Search Tree (very wierd idea!!)
 - Lowest Common Ancestor of a Binary Tree (good solution, quick review)
 - Rotate Image (which solution is better?)
-- Review Trie! (hardiest question of this list)
+- Review Trie! (hardiest question of this list) REVIEWD!
+- Serialize and Deserialize Binary Tree (understand space in serialize and recursion in dereserialize)
+- Serialize and Deserialize BST which the difference between BT and BST, in this case?
