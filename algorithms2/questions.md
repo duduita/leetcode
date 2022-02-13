@@ -100,6 +100,10 @@
 **Binary Tree Zigzag Level Order Traversal**
 - odd levels from the end, and even levels from the beginning :)
 
+**Longest Palindromic Substring**
+- be careful with variables after it get out the loop
+- ini = i - (maxlen - 1) / 2
+
 **Review**
 - number of islands (bfs)
 - Subarray Product Less Than K (trick idea)
